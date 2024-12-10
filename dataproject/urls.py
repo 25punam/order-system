@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from dataapp import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
+    path('insert_data/', views.insert_data, name='insert_data')
 ]
